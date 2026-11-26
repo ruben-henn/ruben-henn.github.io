@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>八种阴性外貌图_面部类型解析_风格参考图鉴</title>
+<meta name="description" content="八种阴性外貌图将面部类型拆成八种可辨识的阴性审美方向，提供每种类型的骨相特征、五官组合、妆容配色与参考图索引，适合做角色设定、妆造参考和自测对照的读者查阅。">
+<meta name="keywords" content="面部类型解析,骨相分类,妆容参考,风格图鉴,角色设定">
+<style>
+:root{
+  --ink:#1d1b22;
+  --ink-2:#3b3744;
+  --ink-3:#6b6478;
+  --line:#e3dfea;
+  --line-2:#d3ccdf;
+  --bg:#f7f5fa;
+  --panel:#ffffff;
+  --panel-2:#f2eef7;
+  --brand:#6b4fa8;
+  --brand-d:#4c3579;
+  --brand-l:#eae3f6;
+  --accent:#c2708f;
+  --accent-l:#fbeaf1;
+  --gold:#9a7b3f;
+  --r-s:6px;
+  --r-m:10px;
+  --r-l:16px;
+  --shadow:0 1px 2px rgba(29,27,34,.05),0 6px 20px -12px rgba(76,53,121,.25);
+  --shadow-h:0 2px 4px rgba(29,27,34,.06),0 14px 32px -14px rgba(76,53,121,.34);
+  --sticky:112px;
+  --max:1300px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  font-size:15.5px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-d);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.25em}
+li{margin-bottom:.35em}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+section[id],div[id]{scroll-margin-top:var(--sticky)}
+
+/* ---------- 公告条 ---------- */
+.topbar{
+  background:linear-gradient(90deg,var(--brand-d),var(--brand) 55%,#7d5cbd);
+  color:#f4effc;font-size:13.5px;
+}
+.topbar .wrap{display:flex;gap:14px;align-items:center;min-height:38px;flex-wrap:wrap}
+.topbar .tag{
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+  padding:1px 8px;border-radius:99px;font-size:12px;letter-spacing:.04em;white-space:nowrap;
+}
+.topbar p{margin:0;opacity:.96}
+.topbar .sp{margin-left:auto;display:flex;gap:12px;flex-wrap:wrap}
+.topbar a{color:#fff;opacity:.9;font-size:13px}
+
+/* ---------- 页头 ---------- */
+.header-outer{
+  position:sticky;top:0;z-index:60;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(76,53,121,.04);
+}
+.topbar{position:sticky;top:0;z-index:61}
+.header{display:flex;align-items:center;gap:18px;min-height:72px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.logo-mark{width:40px;height:40px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15}
+.brand-txt b{font-size:19px;letter-spacing:.06em;font-weight:800}
+.brand-txt span{font-size:11px;color:var(--ink-3);letter-spacing:.18em;text-transform:uppercase}
+.nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:6px}
+.nav a{
+  padding:7px 11px;border-radius:var(--r-s);font-size:14px;color:var(--ink-2);font-weight:500;
+}
+.nav a:hover{background:var(--brand-l);color:var(--brand-d);text-decoration:none}
+.header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search{position:relative;display:flex;align-items:center}
+.search input{
+  width:190px;padding:8px 12px 8px 32px;border:1px solid var(--line-2);border-radius:99px;
+  font-size:13.5px;background:#fbfaff;color:var(--ink);font-family:inherit;
+}
+.search input:focus{border-color:var(--brand);background:#fff}
+.search svg{position:absolute;left:11px;width:14px;height:14px;color:var(--ink-3);pointer-events:none}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;padding:9px 17px;border-radius:99px;
+  font-size:14px;font-weight:600;border:1px solid transparent;cursor:pointer;font-family:inherit;
+  transition:transform .12s ease,box-shadow .18s ease,background .18s ease;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px -8px rgba(76,53,121,.9)}
+.btn-primary:hover{background:var(--brand-d);text-decoration:none;transform:translateY(-1px)}
+.btn-ghost{background:#fff;color:var(--brand-d);border-color:var(--line-2)}
+.btn-ghost:hover{background:var(--brand-l);text-decoration:none}
+.search-empty{
+  display:none;position:absolute;top:calc(100% + 8px);right:0;width:250px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-m);
+  padding:10px 13px;font-size:13px;color:var(--ink-3);box-shadow:var(--shadow);z-index:70;
+}
+.search-empty.on{display:block}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:
+    radial-gradient(1100px 380px at 88% -10%,rgba(194,112,143,.20),transparent 68%),
+    radial-gradient(900px 420px at 6% 0%,rgba(107,79,168,.17),transparent 66%),
+    linear-gradient(180deg,#fbf9fe,#f4f0fa);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero .wrap{
+  display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+  gap:44px;align-items:center;padding-top:52px;padding-bottom:56px;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.14em;
+  color:var(--brand-d);background:#fff;border:1px solid var(--line-2);
+  padding:5px 13px;border-radius:99px;font-weight:600;margin-bottom:18px;
+}
+.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:block}
+.hero h1{
+  font-size:clamp(30px,4.2vw,46px);letter-spacing:.03em;font-weight:800;
+  color:#221d2c;margin-bottom:16px;
+}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero-lead{font-size:16px;color:var(--ink-2);max-width:37em;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.hero-meta{display:flex;gap:26px;flex-wrap:wrap;font-size:13px;color:var(--ink-3)}
+.hero-meta b{display:block;font-size:20px;color:var(--brand-d);font-weight:800;line-height:1.2}
+
+.hero-visual{
+  position:relative;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r-l);padding:20px;box-shadow:var(--shadow);
+}
+.hv-head{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--ink-3);margin-bottom:14px;letter-spacing:.06em}
+.hv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.hv-cell{
+  border:1px solid var(--line);border-radius:var(--r-m);padding:9px 6px 8px;text-align:center;
+  background:linear-gradient(180deg,#fdfcff,#f6f2fc);
+}
+.hv-cell svg{width:100%;height:auto;display:block;margin-bottom:5px}
+.hv-cell span{font-size:11.5px;color:var(--ink-2);font-weight:600;letter-spacing:.02em}
+.hv-foot{
+  margin-top:14px;padding-top:12px;border-top:1px dashed var(--line-2);
+  font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;align-items:center;
+}
+.hv-foot .dot{width:7px;height:7px;border-radius:50%;background:#4f9d6b;flex:none;box-shadow:0 0 0 3px rgba(79,157,107,.16)}
+
+/* ---------- 布局 ---------- */
+.layout{
+  display:grid;grid-template-columns:186px minmax(0,1fr) 258px;
+  gap:26px;padding-top:34px;padding-bottom:48px;align-items:start;
+}
+.col-left,.col-right{position:sticky;top:var(--sticky);display:flex;flex-direction:column;gap:16px}
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--r-m);
+  box-shadow:var(--shadow);
+}
+.panel-h{
+  padding:12px 15px;border-bottom:1px solid var(--line);font-size:13px;font-weight:700;
+  letter-spacing:.1em;color:var(--brand-d);display:flex;justify-content:space-between;align-items:center;gap:8px;
+}
+.panel-h span{font-size:11.5px;color:var(--ink-3);letter-spacing:0;font-weight:500}
+.panel-b{padding:10px 12px}
+
+/* 频道索引 */
+.chan{list-style:none;margin:0;padding:0}
+.chan li{margin:0}
+.chan a{
+  display:flex;justify-content:space-between;align-items:center;gap:6px;
+  padding:7px 9px;border-radius:var(--r-s);font-size:13.5px;color:var(--ink-2);font-weight:500;
+}
+.chan a:hover{background:var(--brand-l);color:var(--brand-d);text-decoration:none}
+.chan small{color:var(--ink-3);font-size:11.5px;font-variant-numeric:tabular-nums}
+
+/* 右栏目录 */
+.toc{list-style:none;margin:0;padding:0;font-size:13px}
+.toc a{display:block;padding:5px 8px;border-left:2px solid transparent;border-radius:0 var(--r-s) var(--r-s) 0;color:var(--ink-2)}
+.toc a:hover{background:var(--panel-2);border-left-color:var(--brand);color:var(--brand-d);text-decoration:none}
+
+.hotlist{list-style:none;margin:0;padding:0;counter-reset:h}
+.hotlist li{counter-increment:h;display:flex;gap:9px;padding:7px 4px;border-bottom:1px dashed var(--line);font-size:13.4px}
+.hotlist li:last-child{border-bottom:0}
+.hotlist li::before{
+  content:counter(h);flex:none;width:19px;height:19px;border-radius:5px;background:var(--panel-2);
+  color:var(--brand-d);font-size:11.5px;font-weight:700;display:grid;place-items:center;margin-top:3px;
+}
+.hotlist li:nth-child(-n3)::before{background:var(--brand);color:#fff}
+.hotlist a{color:var(--ink-2)}
+.hotlist em{display:block;font-style:normal;font-size:11.5px;color:var(--ink-3)}
+
+/* ---------- 主栏通用 ---------- */
+.main{display:flex;flex-direction:column;gap:26px;min-width:0}
+.sec{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-l);padding:24px 26px;box-shadow:var(--shadow)}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.sec-h h2{font-size:21px;color:#241f2e}
+.sec-h h2 small{display:block;font-size:12px;letter-spacing:.16em;color:var(--ink-3);font-weight:600;margin-bottom:3px}
+.sec-h .more{font-size:13px;color:var(--brand-d);font-weight:600;white-space:nowrap}
+.sec-lead{font-size:14px;color:var(--ink-3);margin:0 0 18px;max-width:62em}
+
+/* 概览 */
+.overview p{font-size:15px;color:var(--ink-2)}
+.overview .kv{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:6px;
+}
+.overview .kv div{background:var(--panel-2);border-radius:var(--r-m);padding:11px 13px;font-size:13px;color:var(--ink-2)}
+.overview .kv b{display:block;color:var(--brand-d);font-size:15px;margin-bottom:2px}
+
+/* 卡片网格 */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;min-width:0;
+  transition:transform .15s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-h);border-color:var(--line-2)}
+.card figure{margin:0;position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--panel-2)}
+.card figure img{width:100%;height:100%;object-fit:cover}
+.card .type{
+  position:absolute;left:9px;top:9px;background:rgba(29,27,34,.72);color:#fff;
+  font-size:11.5px;padding:2px 8px;border-radius:99px;letter-spacing:.04em;backdrop-filter:blur(3px);
+}
+.card-b{padding:13px 14px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-b h3{font-size:15.5px;color:#221d2c}
+.card-b p{font-size:13.2px;color:var(--ink-3);margin:0;line-height:1.62}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{font-size:11.5px;color:var(--brand-d);background:var(--brand-l);padding:1.5px 7px;border-radius:99px;white-space:nowrap}
+.card-meta{
+  margin-top:auto;padding-top:9px;border-top:1px dashed var(--line);
+  display:flex;justify-content:space-between;font-size:12px;color:var(--ink-3);
+}
+.card-meta b{color:var(--accent);font-weight:700}
+
+/* 动态列表 */
+.feed{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.feed li{
+  display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:12px;align-items:baseline;
+  padding:9px 2px;border-bottom:1px dashed var(--line);font-size:14px;
+}
+.feed li:last-child{border-bottom:0}
+.feed time{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.feed b{font-weight:700;color:#241f2e}
+.feed em{font-style:normal;color:var(--ink-3);font-size:12.5px;white-space:nowrap}
+
+/* 分类入口 */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(146px,1fr));gap:10px}
+.cats a{
+  display:flex;flex-direction:column;gap:3px;padding:12px 13px;border:1px solid var(--line);
+  border-radius:var(--r-m);background:linear-gradient(180deg,#fff,#faf7fd);color:var(--ink);
+  transition:border-color .15s,background .15s;
+}
+.cats a:hover{border-color:var(--brand);background:var(--brand-l);text-decoration:none}
+.cats b{font-size:14.5px}
+.cats small{font-size:11.8px;color:var(--ink-3)}
+
+/* 深度解析 */
+.deep h3{font-size:16.5px;color:var(--brand-d);margin:22px 0 8px}
+.deep h3:first-of-type{margin-top:6px}
+.deep p{font-size:14.8px;color:var(--ink-2)}
+.compare{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0 16px}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare thead th{background:var(--panel-2);color:var(--brand-d);font-size:13px;letter-spacing:.04em}
+.compare tbody th{background:#fcfbfe;font-weight:600;white-space:nowrap}
+.deep ul{padding-left:1.15em}
+.deep ul li{font-size:14.5px;color:var(--ink-2)}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.steps li{
+  counter-increment:s;position:relative;padding:13px 16px 13px 52px;background:var(--panel-2);
+  border-radius:var(--r-m);font-size:14px;color:var(--ink-2);
+}
+.steps li::before{
+  content:counter(s);position:absolute;left:15px;top:13px;width:24px;height:24px;border-radius:50%;
+  background:var(--brand);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center;
+}
+.steps b{color:#241f2e;display:block;margin-bottom:2px;font-size:14.5px}
+
+/* FAQ */
+details.faq{border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:9px;background:#fff;overflow:hidden}
+details.faq[open]{border-color:var(--line-2);background:#fdfcff}
+details.faq summary{
+  cursor:pointer;padding:12px 40px 12px 15px;font-size:14.5px;font-weight:600;color:#241f2e;
+  list-style:none;position:relative;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);
+  color:var(--brand);font-size:18px;font-weight:500;line-height:1;
+}
+details.faq[open] summary::after{content:"–"}
+details.faq .ans{padding:0 15px 14px;font-size:14px;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:11px}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:12px}
+.cmt{border:1px solid var(--line);border-radius:var(--r-m);padding:12px 13px;background:#fdfcff}
+.cmt-h{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;background:var(--brand);
+}
+.cmt-h b{font-size:13.2px;color:#241f2e}
+.cmt-h time{margin-left:auto;font-size:11.5px;color:var(--ink-3)}
+.cmt p{font-size:13.3px;color:var(--ink-2);margin:0;line-height:1.66}
+
+/* 资讯 */
+.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.news li{display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;align-items:start}
+.news figure{margin:0;aspect-ratio:3/2;border-radius:var(--r-s);overflow:hidden;background:var(--panel-2)}
+.news img{width:100%;height:100%;object-fit:cover}
+.news h3{font-size:15px;margin-bottom:3px}
+.news h3 a{color:#241f2e}
+.news h3 a:hover{color:var(--brand-d)}
+.news time{font-size:12px;color:var(--ink-3);display:block;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.news p{font-size:13.3px;color:var(--ink-3);margin:0}
+
+/* 推荐标签索引 */
+.reco{display:flex;flex-wrap:wrap;gap:8px}
+.reco a{
+  display:inline-flex;align-items:center;gap:6px;padding:6px 13px;border:1px solid var(--line-2);
+  border-radius:99px;font-size:13.4px;color:var(--ink-2);background:#fff;
+}
+.reco a:hover{background:var(--brand-l);border-color:var(--brand);color:var(--brand-d);text-decoration:none}
+.reco a i{font-style:normal;font-size:11.5px;color:var(--ink-3)}
+
+/* 可信度分层 */
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.tier{border:1px solid var(--line);border-radius:var(--r-m);padding:13px 14px;background:#fdfcff}
+.tier h3{font-size:14.5px;color:var(--brand-d);display:flex;align-items:center;gap:7px;margin-bottom:6px}
+.tier h3 i{width:8px;height:8px;border-radius:50%;background:var(--brand);flex:none}
+.tier.t2 h3 i{background:var(--accent)}
+.tier.t3 h3 i{background:var(--gold)}
+.tier p{font-size:13.2px;color:var(--ink-3);margin:0}
+
+/* 引语 */
+.quote{
+  border-left:3px solid var(--accent);background:var(--accent-l);border-radius:0 var(--r-m) var(--r-m) 0;
+  padding:14px 18px;font-size:14.5px;color:#4a2c3a;
+}
+.quote b{display:block;font-size:12.8px;color:var(--accent);margin-top:8px;letter-spacing:.04em}
+
+/* ---------- 页尾 ---------- */
+.footer{background:#221d2c;color:#cfc7db;margin-top:12px;font-size:13.6px}
+.footer .wrap{padding-top:42px;padding-bottom:26px}
+.f-grid{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1)}
+.f-brand b{color:#fff;font-size:17px;letter-spacing:.06em;display:block;margin-bottom:8px}
+.f-brand p{color:#a79dba;max-width:30em;line-height:1.7}
+.f-col h4{color:#fff;font-size:13px;letter-spacing:.1em;margin-bottom:10px}
+.f-col ul{list-style:none;margin:0;padding:0}
+.f-col li{margin-bottom:6px}
+.f-col a{color:#b6adc7}
+.f-col a:hover{color:#fff;text-decoration:none}
+.f-note{padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#8d84a0;font-size:12.5px}
+.f-note p{margin:0}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr);}
+  .col-right{display:none}
+  .hero .wrap{gap:32px}
+}
+@media (max-width:1024px){
+  :root{--sticky:104px}
+  .hero .wrap{grid-template-columns:1fr;gap:30px;padding-top:38px;padding-bottom:42px}
+  .hero-visual{max-width:560px}
+  .layout{grid-template-columns:1fr;gap:20px}
+  .col-left{position:static}
+  .col-left .panel-b{padding:8px}
+  .chan{display:flex;flex-wrap:wrap;gap:4px}
+  .chan li{flex:0 1 auto}
+  .chan a{padding:6px 11px;border:1px solid var(--line);border-radius:99px;gap:7px;font-size:13px}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:740px){
+  :root{--sticky:96px}
+  body{font-size:15px}
+  .wrap{padding:0 15px}
+  .header{min-height:auto;padding-top:10px;padding-bottom:10px;gap:10px}
+  .nav{order:3;flex-basis:100%;overflow-x:auto;flex-wrap:nowrap;margin-left:0;padding-bottom:2px;gap:0}
+  .nav a{white-space:nowrap;padding:6px 10px}
+  .header-tools{margin-left:auto}
+  .search input{width:132px}
+  .btn{padding:8px 14px;font-size:13.5px}
+  .hero h1{font-size:29px}
+  .hero-visual{padding:15px}
+  .hv-grid{gap:7px}
+  .sec{padding:18px 16px;border-radius:var(--r-m)}
+  .sec-h h2{font-size:18.5px}
+  .cards{grid-template-columns:1fr}
+  .feed li{grid-template-columns:1fr;gap:2px;padding:10px 0}
+  .feed time{order:2;font-size:12px}
+  .news li{grid-template-columns:1fr;gap:8px}
+  .news figure{aspect-ratio:16/9}
+  .comments{grid-template-columns:1fr}
+  .compare{font-size:12.6px}
+  .compare th,.compare td{padding:6px 7px}
+  .f-grid{grid-template-columns:1fr;gap:22px}
+  .topbar .sp{display:none}
+  .topbar .wrap{padding-top:6px;padding-bottom:6px;gap:8px}
+}
+@media (max-width:400px){
+  .cats{grid-template-columns:1fr 1fr}
+  .hv-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="topbar" id="announce">
+  <div class="wrap">
+    <span class="tag">今日更新</span>
+    <p>11 月 25 日新增「清冷系」与「幼态系」两组参考图，共 46 张；八型对照速查表同步修订至第 3 版。</p>
+    <div class="sp">
+      <a href="/#latest">更新日志</a>
+      <a href="/#faq">常见问题</a>
+    </div>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<div class="header-outer">
+  <div class="wrap header">
+    <a class="brand" href="/#top" aria-label="八种阴性外貌图 首页">
+      <svg class="logo-mark" viewBox="0 0 48 48" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#7d5cbd"/><stop offset="1" stop-color="#c2708f"/>
+          </linearGradient>
+        </defs>
+        <rect x="1.5" y="1.5" width="45" height="45" rx="12" fill="url(#lg1)"/>
+        <path d="M24 10c-6.6 0-11.6 5-11.6 11.6 0 5.6 3.4 9.2 6.6 12.6h10c3.2-3.4 6.6-7 6.6-12.6C35.6 15 30.6 10 24 10z" fill="#fff" opacity=".92"/>
+        <circle cx="19.6" cy="22.4" r="1.9" fill="#4c3579"/>
+        <circle cx="28.4" cy="22.4" r="1.9" fill="#4c3579"/>
+        <path d="M21 27.6c1.9 1.5 4.1 1.5 6 0" stroke="#c2708f" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-txt">
+        <b>八种阴性外貌图</b>
+        <span>Face Type Atlas</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="/#overview">类型总览</a>
+      <a href="/#featured">八型图鉴</a>
+      <a href="/#latest">更新动态</a>
+      <a href="/#category">分类筛选</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">看图指南</a>
+      <a href="/#faq">问答</a>
+      <a href="/#news">资讯</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input id="q" type="search" placeholder="搜索类型 / 特征 / 条目" aria-label="在本页搜索类型、特征或条目名称">
+        <div class="search-empty" id="qEmpty" role="status" aria-live="polite">没有匹配到本页内容，试试「清冷」「幼态」「骨相」。</div>
+      </div>
+      <a class="btn btn-primary" href="/#featured">查看八型图</a>
+    </div>
+  </div>
+</div>
+
+<!-- 首屏 -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><i></i>面部类型解析 · 第 3 版图鉴</span>
+      <h1>八种阴性外貌图</h1>
+      <p class="hero-lead">
+        把「阴性审美」拆成可辨认的八种面部类型：清冷系、幼态系、柔媚系、古典系、病弱系、明艳系、素净系、妖冶系。
+        每一型给出骨相要点、五官组合、常见妆容配色与对照参考图索引，用于角色设定、妆造沟通和自我对号。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">浏览八型代表图</a>
+        <a class="btn btn-ghost" href="/#guide">先看判断顺序</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>8</b>面部类型</div>
+        <div><b>46</b>今日新增参考图</div>
+        <div><b>132</b>条类型标签</div>
+        <div><b>11-25</b>最近修订</div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-head"><span>八型速览 · 骨相倾向</span><span>2026-11-25</span></div>
+      <div class="hv-grid">
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><path d="M30 4c-9 0-15 7-15 16 0 8 6 14 15 20 9-6 15-12 15-20C45 11 39 4 30 4z" fill="#eae3f6" stroke="#6b4fa8" stroke-width="1.6"/><path d="M22 19h4M34 19h4" stroke="#4c3579" stroke-width="2" stroke-linecap="round"/><path d="M26 27c2.4 1.6 5.6 1.6 8 0" stroke="#c2708f" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+          <span>清冷系</span>
+        </div>
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><circle cx="30" cy="20" r="15" fill="#fbeaf1" stroke="#c2708f" stroke-width="1.6"/><circle cx="24" cy="18" r="2.2" fill="#4c3579"/><circle cx="36" cy="18" r="2.2" fill="#4c3579"/><path d="M26 26c2 2 6 2 8 0" stroke="#c2708f" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+          <span>幼态系</span>
+        </div>
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><path d="M30 5c-8 0-14 6-14 14 0 7 6 13 14 19 8-6 14-12 14-19 0-8-6-14-14-14z" fill="#f2eef7" stroke="#9a7b3f" stroke-width="1.6"/><path d="M23 18c2-2 4-2 6 0M31 18c2-2 4-2 6 0" stroke="#4c3579" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          <span>柔媚系</span>
+        </div>
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><ellipse cx="30" cy="21" rx="13" ry="16" fill="#eae3f6" stroke="#6b4fa8" stroke-width="1.6"/><path d="M24 17v3M36 17v3" stroke="#4c3579" stroke-width="2" stroke-linecap="round"/><path d="M27 28h6" stroke="#c2708f" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>古典系</span>
+        </div>
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><path d="M30 5c-8 0-14 6-14 14 0 8 6 13 14 19 8-6 14-11 14-19 0-8-6-14-14-14z" fill="#fdfcff" stroke="#8d84a0" stroke-width="1.6"/><path d="M23 19h4M33 19h4" stroke="#6b6478" stroke-width="1.8" stroke-linecap="round"/><path d="M27 28c1.8 1 4.2 1 6 0" stroke="#8d84a0" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+          <span>病弱系</span>
+        </div>
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><circle cx="30" cy="20" r="15" fill="#fbeaf1" stroke="#c2708f" stroke-width="1.6"/><path d="M22 16c2-2 5-2 7 0M31 16c2-2 5-2 7 0" stroke="#4c3579" stroke-width="1.7" fill="none" stroke-linecap="round"/><circle cx="30" cy="25" r="3" fill="#c2708f"/></svg>
+          <span>明艳系</span>
+        </div>
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><ellipse cx="30" cy="21" rx="13" ry="16" fill="#f2eef7" stroke="#6b4fa8" stroke-width="1.6"/><circle cx="25" cy="19" r="2" fill="#4c3579"/><circle cx="35" cy="19" r="2" fill="#4c3579"/><path d="M27 27h6" stroke="#6b4fa8" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span>素净系</span>
+        </div>
+        <div class="hv-cell">
+          <svg viewBox="0 0 60 44"><path d="M30 4c-9 0-15 7-15 16 0 8 6 14 15 20 9-6 15-12 15-20C45 11 39 4 30 4z" fill="#eae3f6" stroke="#4c3579" stroke-width="1.6"/><path d="M21 16c3 3 6 3 9 0M30 16c3 3 6 3 9 0" stroke="#4c3579" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M27 27c2 1.4 4 1.4 6 0" stroke="#c2708f" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+          <span>妖冶系</span>
+        </div>
+      </div>
+      <div class="hv-foot"><span class="dot"></span>11 月 25 日修订：柔媚系与妖冶系的分界说明已重写</div>
+    </div>
+  </div>
+</header>
+
+<!-- 三栏主体 -->
+<div class="wrap layout">
+
+  <!-- 左：频道索引 -->
+  <aside class="col-left" aria-label="频道索引">
+    <nav class="panel" aria-label="类型频道">
+      <div class="panel-h">类型频道 <span>8 类</span></div>
+      <div class="panel-b">
+        <ul class="chan">
+          <li><a href="/#featured">清冷系 <small>21 图</small></a></li>
+          <li><a href="/#featured">幼态系 <small>18 图</small></a></li>
+          <li><a href="/#featured">柔媚系 <small>16 图</small></a></li>
+          <li><a href="/#featured">古典系 <small>14 图</small></a></li>
+          <li><a href="/#featured">病弱系 <small>11 图</small></a></li>
+          <li><a href="/#featured">明艳系 <small>19 图</small></a></li>
+          <li><a href="/#featured">素净系 <small>13 图</small></a></li>
+          <li><a href="/#featured">妖冶系 <small>20 图</small></a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="panel" aria-label="实用栏目">
+      <div class="panel-h">实用栏目</div>
+      <div class="panel-b">
+        <ul class="chan">
+          <li><a href="/#deep">骨相对照表</a></li>
+          <li><a href="/#guide">看图顺序</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#tiers">可信度分层</a></li>
+          <li><a href="/#reco">延伸方向</a></li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- 中：主内容 -->
+  <main class="main">
+
+    <!-- 1 概览 -->
+    <section class="sec overview" id="overview">
+      <div class="sec-h">
+        <h2><small>OVERVIEW</small>八种阴性外貌图讲的是什么</h2>
+        <a class="more" href="/#deep">看骨相对照 →</a>
+      </div>
+      <p>
+        「阴性外貌」在造型与角色设计语境里，通常指偏柔、偏内敛、偏含蓄的一类面部气质，它与性别无必然关系，更接近一种视觉语汇。
+        八种阴性外貌图把这套语汇拆成八个可操作的坐标：<b>清冷系</b>、<b>幼态系</b>、<b>柔媚系</b>、<b>古典系</b>、<b>病弱系</b>、<b>明艳系</b>、<b>素净系</b>、<b>妖冶系</b>。
+        每一型对应不同的骨相倾向、面部留白比例、眼型走势和唇形厚薄，而不是简单的「好看/不好看」。
+      </p>
+      <p>
+        当前值得关注的有三条线：一是清冷系与幼态系的边界正在被重新划分，低饱和与高软度并不互斥；二是古典系的参考图从影视剧照扩展到工笔人像与戏曲妆面，
+        可以参考的面部结构样本明显变多；三是病弱系与素净系常被混用，但前者强调气血感偏低，后者强调色彩克制，判断依据完全不同。
+        这八型并非互相排斥，多数真实面孔是主型加一到两型辅型。
+      </p>
+      <div class="kv">
+        <div><b>主型 + 辅型</b>多数面孔是复合型，单型只占少数</div>
+        <div><b>骨相先于妆容</b>先看颅顶、颧位、下颌角，再看配色</div>
+        <div><b>参考图要看正面</b>侧脸图容易放大鼻梁与下颌判断</div>
+      </div>
+    </section>
+
+    <!-- 2 精选八型卡片 -->
+    <section class="sec" id="featured">
+      <div class="sec-h">
+        <h2><small>TYPE ATLAS</small>八型代表图与特征速览</h2>
+        <a class="more" href="/#latest">今日更新 46 张 →</a>
+      </div>
+      <p class="sec-lead">每张卡片给出该型的核心骨相、常见五官组合与一个可直接对照的参考条目，卡片内的标签可以直接当作搜索词使用。</p>
+      <div class="cards">
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/qingleng-xi01/400/300" width="400" height="300" loading="lazy" alt="清冷系面部参考图，低饱和侧逆光人像">
+            <span class="type">清冷系</span>
+          </figure>
+          <div class="card-b">
+            <h3>清冷系 · 低饱和直线条</h3>
+            <p>颅顶偏高、面部脂肪少，眼型细长且内眼角略下压，唇峰清晰但唇色偏淡。整体给人「不好接近但不凶」的距离感。</p>
+            <div class="tags"><span>直线条</span><span>低饱和</span><span>细长眼</span></div>
+            <div class="card-meta"><span>参考图 21 张</span><b>热度 96</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/youtai-xi02/400/300" width="400" height="300" loading="lazy" alt="幼态系面部参考图，圆脸短下巴正面照">
+            <span class="type">幼态系</span>
+          </figure>
+          <div class="card-b">
+            <h3>幼态系 · 圆轮廓与短下庭</h3>
+            <p>下庭明显短于中庭，面颊饱满、下颌角圆钝，眼位偏低且黑眼珠露出多。判断关键是下庭比例，不是单纯「脸圆」。</p>
+            <div class="tags"><span>短下庭</span><span>圆下颌</span><span>低眼位</span></div>
+            <div class="card-meta"><span>参考图 18 张</span><b>热度 92</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/roumei-xi03/400/300" width="400" height="300" loading="lazy" alt="柔媚系面部参考图，暖光侧面人像">
+            <span class="type">柔媚系</span>
+          </figure>
+          <div class="card-b">
+            <h3>柔媚系 · 曲线感与上扬眼尾</h3>
+            <p>面部线条以弧线为主，眼尾自然上扬，唇形偏厚且唇珠明显。与清冷系的差别在于线条方向：一个向外放，一个向内收。</p>
+            <div class="tags"><span>弧线轮廓</span><span>上扬眼尾</span><span>厚唇珠</span></div>
+            <div class="card-meta"><span>参考图 16 张</span><b>热度 89</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/gudian-xi04/400/300" width="400" height="300" loading="lazy" alt="古典系面部参考图，工笔风格人像">
+            <span class="type">古典系</span>
+          </figure>
+          <div class="card-b">
+            <h3>古典系 · 面若银盘的对称感</h3>
+            <p>面部纵向偏短、横向舒展，眉形多为远山眉或柳叶眉，五官分布均匀。参考样本常来自工笔人像与戏曲旦角妆面。</p>
+            <div class="tags"><span>对称五官</span><span>远山眉</span><span>面盘舒展</span></div>
+            <div class="card-meta"><span>参考图 14 张</span><b>热度 84</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/bingruo-xi05/400/300" width="400" height="300" loading="lazy" alt="病弱系面部参考图，冷白调人像">
+            <span class="type">病弱系</span>
+          </figure>
+          <div class="card-b">
+            <h3>病弱系 · 低气血感与薄皮相</h3>
+            <p>肤色偏白偏冷，眼下与唇周带轻微青调，颧骨不突出但面颊略凹。判断要点在「气血感偏低」，而非单纯化白妆。</p>
+            <div class="tags"><span>冷白皮</span><span>眼下青调</span><span>薄面颊</span></div>
+            <div class="card-meta"><span>参考图 11 张</span><b>热度 78</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/mingyan-xi06/400/300" width="400" height="300" loading="lazy" alt="明艳系面部参考图，高对比红唇人像">
+            <span class="type">明艳系</span>
+          </figure>
+          <div class="card-b">
+            <h3>明艳系 · 高对比与大五官</h3>
+            <p>五官占比大、眼裂宽，眉色唇色对比强，面部留白少。和柔媚系都偏外放，但明艳系靠对比度，柔媚系靠线条弧度。</p>
+            <div class="tags"><span>大五官</span><span>高对比</span><span>宽眼裂</span></div>
+            <div class="card-meta"><span>参考图 19 张</span><b>热度 94</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/sujing-xi07/400/300" width="400" height="300" loading="lazy" alt="素净系面部参考图，极简淡妆人像">
+            <span class="type">素净系</span>
+          </figure>
+          <div class="card-b">
+            <h3>素净系 · 色彩克制与留白多</h3>
+            <p>五官量感中等，妆面只保留底色与眉形，面部留白充足。它更像一种「减法策略」，同一张脸改配色就能从素净切到明艳。</p>
+            <div class="tags"><span>减法妆</span><span>留白多</span><span>中等量感</span></div>
+            <div class="card-meta"><span>参考图 13 张</span><b>热度 81</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="https://picsum.photos/seed/yaoye-xi08/400/300" width="400" height="300" loading="lazy" alt="妖冶系面部参考图，深色眼妆人像">
+            <span class="type">妖冶系</span>
+          </figure>
+          <div class="card-b">
+            <h3>妖冶系 · 浓重眼线与内眦尖锐</h3>
+            <p>内眼角尖锐、外眼角上挑幅度大，常用深色眼影压住眼窝。它与柔媚系的界线在于锐度：柔媚是圆的，妖冶是尖的。</p>
+            <div class="tags"><span>尖锐内眦</span><span>上挑眼</span><span>深眼窝</span></div>
+            <div class="card-meta"><span>参考图 20 张</span><b>热度 90</b></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="sec" id="latest">
+      <div class="sec-h">
+        <h2><small>UPDATES</small>11 月 25 日前后更新动态</h2>
+        <a class="more" href="/#news">相关资讯 →</a>
+      </div>
+      <p class="sec-lead">按时间倒序，记录八型图鉴的新增参考图、标签修订与分界说明调整。</p>
+      <ul class="feed">
+        <li><time>今天 09:40</time><span><b>清冷系</b>新增 12 张低饱和参考图，包含 3 张侧逆光样本</span><em>图鉴</em></li>
+        <li><time>今天 09:10</time><span><b>幼态系</b>补入「短下庭 + 高颅顶」组合条目，共 6 张</span><em>图鉴</em></li>
+        <li><time>昨天 21:15</time><span><b>柔媚系 × 妖冶系</b>分界说明重写，改用「锐度 + 弧度」双轴判断</span><em>修订</em></li>
+        <li><time>昨天 18:30</time><span><b>古典系</b>新增工笔人像分类，加入 5 张戏曲旦角妆面参考</span><em>图鉴</em></li>
+        <li><time>11 月 23 日</time><span><b>病弱系</b>标签拆分为「冷白皮」「眼下青调」「薄面颊」三项独立标签</span><em>标签</em></li>
+        <li><time>11 月 22 日</time><span><b>明艳系</b>热度榜更新，宽眼裂条目升至第二</span><em>榜单</em></li>
+        <li><time>11 月 20 日</time><span><b>素净系</b>补入 4 张极简淡妆对照图，标注了同脸不同配色的例子</span><em>图鉴</em></li>
+        <li><time>11 月 18 日</time><span><b>八型速查表</b>发布第 2 版，加入主型与辅型的复合判定列</span><em>工具</em></li>
+        <li><time>11 月 15 日</time><span><b>妖冶系</b>新增内眦尖锐度示意图，替换原有模糊描述</span><em>修订</em></li>
+        <li><time>11 月 11 日</time><span><b>清冷系</b>与<b>素净系</b>的混淆条目合并整理，减少 7 条重复标签</span><em>标签</em></li>
+        <li><time>11 月 6 日</time><span>新增「骨相对照表」栏目，覆盖 8 型 × 5 个判断维度</span><em>工具</em></li>
+        <li><time>10 月 30 日</time><span><b>幼态系</b>参考图库整理完成，按年龄感分为三档</span><em>图鉴</em></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="sec" id="category">
+      <div class="sec-h">
+        <h2><small>CATEGORY</small>按类型进入</h2>
+        <a class="more" href="/#guide">不确定先看哪个？→</a>
+      </div>
+      <p class="sec-lead">八类入口与左侧频道一一对应，点进去即定位到该型在图鉴中的卡片位置。</p>
+      <div class="cats">
+        <a href="/#featured"><b>清冷系</b><small>直线条 · 低饱和 · 细长眼</small></a>
+        <a href="/#featured"><b>幼态系</b><small>短下庭 · 圆轮廓 · 低眼位</small></a>
+        <a href="/#featured"><b>柔媚系</b><small>弧线感 · 上扬眼尾 · 厚唇</small></a>
+        <a href="/#featured"><b>古典系</b><small>对称 · 舒展面盘 · 远山眉</small></a>
+        <a href="/#featured"><b>病弱系</b><small>冷白皮 · 低气血感 · 薄面颊</small></a>
+        <a href="/#featured"><b>明艳系</b><small>大五官 · 高对比 · 宽眼裂</small></a>
+        <a href="/#featured"><b>素净系</b><small>减法妆 · 留白多 · 中等量感</small></a>
+        <a href="/#featured"><b>妖冶系</b><small>尖锐内眦 · 深眼窝 · 上挑眼</small></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="sec deep" id="deep">
+      <div class="sec-h">
+        <h2><small>IN DEPTH</small>八型怎么分：骨相、五官与配色三条线</h2>
+      </div>
+      <p>
+        八种阴性外貌图之所以要分成八型，而不是笼统地归为「柔」，是因为面部判断里存在三个彼此独立的变量：骨相结构、五官量感、配色对比。
+        大多数误判都来自把这三条线混在一起看——比如把「低饱和妆面」当成清冷系，实际上只要骨相偏圆、眼位偏低，同一张脸换成低饱和也只是「素净的幼态」。
+      </p>
+
+      <h3>第一条线：骨相结构决定主干</h3>
+      <p>
+        骨相是最难通过妆造改变的一层，因此最先判断。可操作的三个位置是颅顶高度、颧骨外扩程度和下颌角圆钝度。颅顶高且颧位靠上，容易落在清冷系；颅顶高但颧位低、下颌圆钝，更容易落在幼态系。古典系则看面部横向舒展度，面盘宽而纵向短是其典型结构。
+      </p>
+      <table class="compare">
+        <thead>
+          <tr><th>类型</th><th>颅顶</th><th>颧位</th><th>下颌角</th><th>常见误判</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>清冷系</th><td>偏高</td><td>靠上、不外扩</td><td>清晰偏方</td><td>被误认为素净系</td></tr>
+          <tr><th>幼态系</th><td>偏高</td><td>偏低</td><td>圆钝</td><td>被误认为柔媚系</td></tr>
+          <tr><th>古典系</th><td>中等</td><td>横向舒展</td><td>不外露</td><td>被误认为素净系</td></tr>
+          <tr><th>病弱系</th><td>中等</td><td>不突出但面颊凹</td><td>偏窄</td><td>被误认为清冷系</td></tr>
+          <tr><th>明艳系</th><td>中等偏高</td><td>明显</td><td>清晰</td><td>被误认为妖冶系</td></tr>
+        </tbody>
+      </table>
+
+      <h3>第二条线：五官量感决定外放程度</h3>
+      <p>
+        五官量感指眼睛、鼻子、嘴唇在面部占据的视觉面积。量感大、留白少的组合天然更外放，量感中等、留白充足则更内敛。这条线能快速区分几组容易混淆的类型：
+      </p>
+      <ul>
+        <li><b>明艳系 vs 柔媚系</b>：两者都外放，但明艳系靠五官占比大与高对比，柔媚系靠线条弧度与眼尾上扬，量感可以中等。</li>
+        <li><b>妖冶系 vs 柔媚系</b>：妖冶系的关键是锐度，内眼角尖、外眼角挑幅大；柔媚系整体是圆润的，挑幅小。</li>
+        <li><b>素净系 vs 清冷系</b>：素净系五官量感中等，只是配色克制；清冷系量感偏小、线条偏直，即使加重妆面也不会转向明艳。</li>
+        <li><b>幼态系 vs 古典系</b>：幼态系下庭短、眼位低；古典系下庭比例正常，靠横向舒展取胜。</li>
+      </ul>
+
+      <h3>第三条线：配色对比是可变层</h3>
+      <p>
+        配色是三层里唯一可以随时切换的。同一张偏圆的脸，用低饱和裸色是素净，用正红唇加浓眉就是明艳。因此看图鉴时建议先遮住配色只看结构，再单独看配色带来的气质偏移。这也是为什么八型图鉴里每组参考图都标注了配色方案——它记录的是「该型常用什么配色」，而不是「该型必须是什么配色」。
+      </p>
+
+      <h3>复合型的判断顺序</h3>
+      <p>
+        真实面孔多数是复合型。推荐顺序是先定主型，再补辅型，最后看辅型对主型的修饰方向：
+      </p>
+      <ol>
+        <li>先看下颌角与颅顶，确定主干落在哪一型。</li>
+        <li>再看五官量感，判断是否需要外放型辅型（明艳、妖冶）或内敛型辅型（素净、病弱）。</li>
+        <li>最后看配色习惯，确认这是稳定倾向还是临时妆造。</li>
+        <li>若两条线冲突明显（如骨相偏幼态、五官量感却很大），以骨相为主型，五官为辅型标注。</li>
+      </ol>
+      <p>
+        需要提醒的是，八型是描述工具，不是评价体系。任何一型都没有优劣，图鉴的价值在于让沟通更快——说「清冷系加一点病弱」比说「冷淡但不凶、有点没睡醒」要省力得多。
+      </p>
+    </section>
+
+    <!-- 6 看图指南 -->
+    <section class="sec" id="guide">
+      <div class="sec-h">
+        <h2><small>GUIDE</small>第一次看八种阴性外貌图的顺序</h2>
+      </div>
+      <p class="sec-lead">按下面的顺序看，能减少「看哪张都像」的困惑。整个流程大约 15 分钟。</p>
+      <ol class="steps">
+        <li><b>先看骨相对照表，不看图</b>用文字记住三种结构的差别：颅顶高低、颧位上下、下颌方圆。看图之前先建立判断词。</li>
+        <li><b>只看正面图，跳过侧脸</b>侧脸会放大鼻梁高度和下颌线条，容易把清冷系看成病弱系。图鉴中标注「正面」的样本优先。</li>
+        <li><b>从清冷系与幼态系两端开始</b>这两型的结构差异最大，先建立两个极端参照，再往中间的类型靠。</li>
+        <li><b>用柔媚系和妖冶系练「锐度」判断</b>这两型的差别只在锐度，练过之后再看其他类型会快很多。</li>
+        <li><b>最后看素净系与病弱系</b>它们最容易被当成「没化妆」，实际一个是配色克制，一个是气血感偏低。</li>
+        <li><b>记录主型与辅型各一个</b>写下两个词就够了，不必追求精确到小数点。复合标注比单型更接近真实。</li>
+      </ol>
+      <div class="quote" style="margin-top:16px">
+        「判断一个条目值不值得花时间看，先看它有没有标注骨相位置。只写『氛围感』而不写颅顶和颧位的参考图，对判断的帮助很有限。」
+        <b>—— 图鉴编辑组，11 月 20 日修订说明</b>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="sec" id="faq">
+      <div class="sec-h">
+        <h2><small>FAQ</small>常见问题</h2>
+      </div>
+      <details class="faq" open>
+        <summary>八种阴性外貌图里的类型会随年龄变化吗？</summary>
+        <div class="ans">会。面颊脂肪随年龄减少，幼态系常向清冷系或素净系偏移；下颌角在成年后基本稳定，所以骨相主型变化不大，变的多是量感与配色。图鉴因此把骨相标为稳定层，把量感和配色标为可变层。</div>
+      </details>
+      <details class="faq">
+        <summary>清冷系和素净系到底有什么区别？</summary>
+        <div class="ans">清冷系是结构判断，特征是线条偏直、五官量感偏小、眼型细长；素净系是配色判断，五官量感可以中等，只是妆面做了减法。同一张脸可以是「素净妆的清冷系」，也可以是「浓妆的素净系」，两者不冲突。</div>
+      </details>
+      <details class="faq">
+        <summary>第一次对号入座，从哪个类型开始看比较好？</summary>
+        <div class="ans">建议从清冷系与幼态系两端开始。这两型的骨相差异最明显，先建立两个极端参照，再判断自己更靠近哪一端，往中间推会快很多。直接看柔媚系或妖冶系容易因为妆面干扰而误判。</div>
+      </details>
+      <details class="faq">
+        <summary>柔媚系和妖冶系常被混用，判断标准是什么？</summary>
+        <div class="ans">看锐度。柔媚系的内眼角圆、外眼角上扬幅度小，整体线条是弧的；妖冶系内眼角尖锐、外眼角挑幅大，常配深眼窝。把两张参考图的眼部区域并排看，差别会非常明显。</div>
+      </details>
+      <details class="faq">
+        <summary>病弱系是不是只要化白妆就能做到？</summary>
+        <div class="ans">不是。病弱系的核心是气血感偏低，表现为肤色冷白、眼下与唇周有轻微青调、面颊略凹。单纯把粉底调白而不处理眼下和唇色，只会得到「白」而不是「弱」，反而容易和素净系混淆。</div>
+      </details>
+      <details class="faq">
+        <summary>如果同时符合两种类型，应该怎么标注？</summary>
+        <div class="ans">以骨相为定主型，以五官量感或配色为定辅型，例如「清冷系 + 病弱辅」。主型写一个即可，辅型最多写两个，超过两个说明判断维度还没拆清楚，建议回到骨相对照表重新看一遍。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="sec" id="comments">
+      <div class="sec-h">
+        <h2><small>COMMENTS</small>读者怎么说</h2>
+        <span class="more">近 30 天 186 条</span>
+      </div>
+      <div class="comments">
+        <div class="cmt"><div class="cmt-h"><span class="avatar">青</span><b>青瓷小满</b><time>今天 10:22</time></div><p>按骨相对照表重新看了一遍，我原来一直以为自己是清冷系，其实是素净系加清冷辅，难怪换浓妆也不违和。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">木</span><b>木木不困</b><time>今天 09:05</time></div><p>柔媚和妖冶的分界说明写得很清楚，锐度这个词一下就点通了。之前一直分不清这两组图。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">南</span><b>南窗听雨</b><time>昨天 22:41</time></div><p>幼态系那组短下庭的条目很实用，做角色设定的时候直接拿来当参考了，比翻图库快。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">阿</span><b>阿岚做妆造</b><time>昨天 20:13</time></div><p>作为妆造师，病弱系拆成三个独立标签这件事帮了大忙，跟客户沟通时不用再解释半天「不是白就行」。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">十</span><b>十七号胶片</b><time>11 月 24 日</time></div><p>古典系新增的工笔人像分类不错，但戏曲旦角那几张和日常参考差距有点大，建议分开标注使用场景。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">梨</span><b>梨白</b><time>11 月 24 日</time></div><p>明艳系的热度排得有点高，其实这型对五官占比要求挺苛刻的，不是所有人都能对号。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">野</span><b>野原小葵</b><time>11 月 23 日</time></div><p>看完看图指南那六步，确实比一张张翻图效率高。尤其是「只看正面图」这条，之前老被侧脸误导。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">沉</span><b>沉舟侧畔</b><time>11 月 22 日</time></div><p>妖冶系的内眦尖锐示意图终于换掉了，旧版那张太模糊，新版一眼就能看出差别。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">小</span><b>小满未满</b><time>11 月 21 日</time></div><p>复合型判断顺序那段写得挺实在的，主型看骨相、辅型看量感，这个逻辑套到别的审美分类上也成立。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">砚</span><b>砚台有墨</b><time>11 月 20 日</time></div><p>素净系那四张同脸不同配色的对照图很有说服力，第一次直观感受到配色能改变这么多。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">知</span><b>知更鸟的春天</b><time>11 月 19 日</time></div><p>清冷系的参考图数量最多，但有几张其实更接近病弱系，希望后续能再筛一遍。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">慢</span><b>慢半拍</b><time>11 月 18 日</time></div><p>速查表第二版加了复合判定列，这个改动很实在，比第一版好用。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">林</span><b>林间有风</b><time>11 月 17 日</time></div><p>古典系面盘舒展那条一直没太懂，看完深度解析里的横向纵向对比才明白是什么意思。</p></div>
+        <div class="cmt"><div class="cmt-h"><span class="avatar">白</span><b>白露为霜</b><time>11 月 16 日</time></div><p>整体偏实用，但八型的命名有点文气，做科普的时候还得自己翻译一遍，稍微麻烦。</p></div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="sec" id="news">
+      <div class="sec-h">
+        <h2><small>NEWS</small>相关资讯</h2>
+        <a class="more" href="/#latest">全部更新 →</a>
+      </div>
+      <ul class="news">
+        <li>
+          <figure><img src="https://picsum.photos/seed/baxing-zixun01/600/400" width="600" height="400" loading="lazy" alt="清冷系与素净系分界修订说明配图"></figure>
+          <div>
+            <h3><a href="/#deep">清冷系与素净系分界修订：新增配色剥离对照步骤</a></h3>
+            <time>2026-11-25</time>
+            <p>本次修订把配色从结构判断中剥离，新增一步「遮住配色只看轮廓」，减少了这两型之间的误判。</p>
+          </div>
+        </li>
+        <li>
+          <figure><img src="https://picsum.photos/seed/baxing-zixun02/600/400" width="600" height="400" loading="lazy" alt="古典系工笔人像参考分类上线配图"></figure>
+          <div>
+            <h3><a href="/#featured">古典系新增工笔人像分类，补入 5 张戏曲旦角妆面</a></h3>
+            <time>2026-11-24</time>
+            <p>工笔人像的面部结构与日常妆造差异较大，本次同时标注了使用场景，避免直接套用。</p>
+          </div>
+        </li>
+        <li>
+          <figure><img src="https://picsum.photos/seed/baxing-zixun03/600/400" width="600" height="400" loading="lazy" alt="病弱系标签拆分公告配图"></figure>
+          <div>
+            <h3><a href="/#comments">病弱系标签拆成三项：冷白皮、眼下青调、薄面颊</a></h3>
+            <time>2026-11-23</time>
+            <p>拆分后与素净系的重复标签减少 7 条，妆造沟通场景下的检索效率明显提升。</p>
+          </div>
+        </li>
+        <li>
+          <figure><img src="https://picsum.photos/seed/baxing-zixun04/600/400" width="600" height="400" loading="lazy" alt="幼态系年龄感分档整理完成配图"></figure>
+          <div>
+            <h3><a href="/#featured">幼态系参考图库按年龄感分为三档</a></h3>
+            <time>2026-11-21</time>
+            <p>同一型在不同年龄段的呈现差异较大，分档后便于做角色年龄设定时直接取用。</p>
+          </div>
+        </li>
+        <li>
+          <figure><img src="https://picsum.photos/seed/baxing-zixun05/600/400" width="600" height="400" loading="lazy" alt="明艳系热度榜更新配图"></figure>
+          <div>
+            <h3><a href="/#tiers">明艳系热度榜更新，宽眼裂条目升至第二</a></h3>
+            <time>2026-11-19</time>
+            <p>近两周读者检索集中在「大五官」与「高对比」两个标签，宽眼裂条目关注度上升明显。</p>
+          </div>
+        </li>
+        <li>
+          <figure><img src="https://picsum.photos/seed/baxing-zixun06/600/400" width="600" height="400" loading="lazy" alt="八型速查表第二版发布配图"></figure>
+          <div>
+            <h3><a href="/#deep">八型速查表第 2 版发布，加入复合判定列</a></h3>
+            <time>2026-11-18</time>
+            <p>新版支持主型与辅型的双列填写，覆盖 8 型 × 5 个判断维度，替代了原版的单型勾选。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="sec" id="reco">
+      <div class="sec-h">
+        <h2><small>RELATED</small>延伸方向与相关条目</h2>
+      </div>
+      <p class="sec-lead">这些是延伸到具体场景的方向词，适合继续往下查：</p>
+      <div class="reco">
+        <a href="/#deep">骨相对照表 <i>工具</i></a>
+        <a href="/#featured">远山眉画法 <i>妆造</i></a>
+        <a href="/#featured">短下庭角色设定 <i>设定</i></a>
+        <a href="/#featured">低饱和配色方案 <i>配色</i></a>
+        <a href="/#guide">正面参考图取景 <i>摄影</i></a>
+        <a href="/#featured">戏曲旦角妆面 <i>古典</i></a>
+        <a href="/#deep">面部留白比例 <i>结构</i></a>
+        <a href="/#faq">复合型标注方法 <i>方法</i></a>
+      </div>
+    </section>
+
+    <!-- 11 可信度分层 -->
+    <section class="sec" id="tiers">
+      <div class="sec-h">
+        <h2><small>TIERS</small>参考图可信度分层</h2>
+      </div>
+      <p class="sec-lead">同一型下的参考图质量差别不小，按下面三层取用，能减少被单张图带偏的情况。</p>
+      <div class="tiers">
+        <div class="tier">
+          <h3><i></i>第一层：结构清晰</h3>
+          <p>正面、光线均匀、无明显滤镜，标注了颅顶与颧位。共 58 张，适合直接用于判断与设定。</p>
+        </div>
+        <div class="tier t2">
+          <h3><i></i>第二层：妆造主导</h3>
+          <p>有明确妆容或造型，结构被部分遮盖。共 71 张，适合参考配色与妆面，不适合判断骨相。</p>
+        </div>
+        <div class="tier t3">
+          <h3><i></i>第三层：氛围参考</h3>
+          <p>以光影和氛围为主，面部结构信息少。共 33 张，仅作情绪板使用，不建议作为类型依据。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右：辅助栏 -->
+  <aside class="col-right" aria-label="辅助信息">
+    <nav class="panel" aria-label="本页目录">
+      <div class="panel-h">本页目录</div>
+      <div class="panel-b">
+        <ul class="toc">
+          <li><a href="/#overview">类型总览</a></li>
+          <li><a href="/#featured">八型图鉴</a></li>
+          <li><a href="/#latest">更新动态</a></li>
+          <li><a href="/#category">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">看图指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#reco">延伸方向</a></li>
+          <li><a href="/#tiers">可信度分层</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="panel">
+      <div class="panel-h">本周热榜 <span>11-25</span></div>
+      <div class="panel-b">
+        <ol class="hotlist">
+          <li><div><a href="/#featured">清冷系低饱和参考图</a><em>21 图 · 热度 96</em></div></li>
+          <li><div><a href="/#featured">明艳系宽眼裂条目</a><em>19 图 · 热度 94</em></div></li>
+          <li><div><a href="/#featured">幼态系短下庭组合</a><em>18 图 · 热度 92</em></div></li>
+          <li><div><a href="/#featured">妖冶系内眦尖锐度</a><em>20 图 · 热度 90</em></div></li>
+          <li><div><a href="/#featured">柔媚系上扬眼尾</a><em>16 图 · 热度 89</em></div></li>
+          <li><div><a href="/#featured">古典系工笔人像</a><em>14 图 · 热度 84</em></div></li>
+          <li><div><a href="/#featured">素净系减法妆</a><em>13 图 · 热度 81</em></div></li>
+          <li><div><a href="/#featured">病弱系冷白皮</a><em>11 图 · 热度 78</em></div></li>
+        </ol>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b>八种阴性外貌图</b>
+        <p>面向角色设定、妆造沟通与自我对照的面部类型图鉴。以骨相、五官量感、配色三条线拆分八种阴性外貌方向，持续更新参考图与分界说明。</p>
+      </div>
+      <div class="f-col">
+        <h4>类型图鉴</h4>
+        <ul>
+          <li><a href="/#featured">清冷系</a></li>
+          <li><a href="/#featured">幼态系</a></li>
+          <li><a href="/#featured">柔媚系</a></li>
+          <li><a href="/#featured">古典系</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>其余四型</h4>
+        <ul>
+          <li><a href="/#featured">病弱系</a></li>
+          <li><a href="/#featured">明艳系</a></li>
+          <li><a href="/#featured">素净系</a></li>
+          <li><a href="/#featured">妖冶系</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>实用栏目</h4>
+        <ul>
+          <li><a href="/#deep">骨相对照表</a></li>
+          <li><a href="/#guide">看图顺序</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#tiers">可信度分层</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>图鉴内容为类型化描述工具，不代表对角色的价值评判。参考图为示意样本，用于结构对照。</p>
+      <p>© 2026 八种阴性外貌图 · 图鉴修订版 3.0 · 最近更新 2026-11-25</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var empty = document.getElementById('qEmpty');
+  if(!q) return;
+
+  // 收集可检索元素：板块标题、卡片标题、列表条目、分类、FAQ、标签
+  var pool = Array.prototype.slice.call(document.querySelectorAll(
+    '#overview, #featured .card, #latest .feed li, #category .cats a, #deep h3, #deep p, #guide .steps li, #faq details, #comments .cmt, #news .news li, #reco .reco a, #tiers .tier'
+  ));
+
+  function reset(){
+    pool.forEach(function(el){ el.style.display = ''; });
+    empty.classList.remove('on');
+  }
+
+  function filter(){
+    var kw = q.value.trim().toLowerCase();
+    if(!kw){ reset(); return; }
+    var hit = 0;
+    pool.forEach(function(el){
+      var txt = (el.textContent || '').toLowerCase();
+      var ok = txt.indexOf(kw) !== -1;
+      el.style.display = ok ? '' : 'none';
+      if(ok) hit++;
+    });
+    empty.classList.toggle('on', hit === 0);
+  }
+
+  q.addEventListener('input', filter);
+  q.addEventListener('search', function(){ if(!q.value.trim()) reset(); });
+
+  // 键盘：Esc 清空
+  q.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ q.value = ''; reset(); }
+  });
+})();
+</script>
+</body>
+                                                                                                                                                                                </html>
